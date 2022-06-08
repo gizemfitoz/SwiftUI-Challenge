@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		C323C9FC2850E354006923A9 /* SwiftUI_ChallengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C323C9FB2850E354006923A9 /* SwiftUI_ChallengeApp.swift */; };
-		C323C9FE2850E354006923A9 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C323C9FD2850E354006923A9 /* ContentView.swift */; };
 		C323CA002850E356006923A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C323C9FF2850E356006923A9 /* Assets.xcassets */; };
 		C323CA032850E356006923A9 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C323CA022850E356006923A9 /* Preview Assets.xcassets */; };
 		C323CA0D2850E356006923A9 /* SwiftUI_ChallengeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C323CA0C2850E356006923A9 /* SwiftUI_ChallengeTests.swift */; };
 		C323CA172850E356006923A9 /* SwiftUI_ChallengeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C323CA162850E356006923A9 /* SwiftUI_ChallengeUITests.swift */; };
 		C323CA192850E356006923A9 /* SwiftUI_ChallengeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C323CA182850E356006923A9 /* SwiftUI_ChallengeUITestsLaunchTests.swift */; };
+		C323CA292850E379006923A9 /* DashboardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C323CA282850E379006923A9 /* DashboardViewModel.swift */; };
+		C323CA2B2850E389006923A9 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C323CA2A2850E389006923A9 /* DashboardView.swift */; };
+		C323CA2D2850E5AA006923A9 /* Color+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = C323CA2C2850E5AA006923A9 /* Color+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,7 +38,6 @@
 /* Begin PBXFileReference section */
 		C323C9F82850E354006923A9 /* SwiftUI-Challenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "SwiftUI-Challenge.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C323C9FB2850E354006923A9 /* SwiftUI_ChallengeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_ChallengeApp.swift; sourceTree = "<group>"; };
-		C323C9FD2850E354006923A9 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		C323C9FF2850E356006923A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		C323CA022850E356006923A9 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		C323CA082850E356006923A9 /* SwiftUI-ChallengeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftUI-ChallengeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -44,6 +45,9 @@
 		C323CA122850E356006923A9 /* SwiftUI-ChallengeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "SwiftUI-ChallengeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C323CA162850E356006923A9 /* SwiftUI_ChallengeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_ChallengeUITests.swift; sourceTree = "<group>"; };
 		C323CA182850E356006923A9 /* SwiftUI_ChallengeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_ChallengeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		C323CA282850E379006923A9 /* DashboardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewModel.swift; sourceTree = "<group>"; };
+		C323CA2A2850E389006923A9 /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
+		C323CA2C2850E5AA006923A9 /* Color+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,7 +99,8 @@
 			isa = PBXGroup;
 			children = (
 				C323C9FB2850E354006923A9 /* SwiftUI_ChallengeApp.swift */,
-				C323C9FD2850E354006923A9 /* ContentView.swift */,
+				C323CA252850E35E006923A9 /* DashboardView */,
+				C323CA2C2850E5AA006923A9 /* Color+Extension.swift */,
 				C323C9FF2850E356006923A9 /* Assets.xcassets */,
 				C323CA012850E356006923A9 /* Preview Content */,
 			);
@@ -125,6 +130,15 @@
 				C323CA182850E356006923A9 /* SwiftUI_ChallengeUITestsLaunchTests.swift */,
 			);
 			path = "SwiftUI-ChallengeUITests";
+			sourceTree = "<group>";
+		};
+		C323CA252850E35E006923A9 /* DashboardView */ = {
+			isa = PBXGroup;
+			children = (
+				C323CA2A2850E389006923A9 /* DashboardView.swift */,
+				C323CA282850E379006923A9 /* DashboardViewModel.swift */,
+			);
+			path = DashboardView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -257,8 +271,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C323C9FE2850E354006923A9 /* ContentView.swift in Sources */,
+				C323CA2B2850E389006923A9 /* DashboardView.swift in Sources */,
 				C323C9FC2850E354006923A9 /* SwiftUI_ChallengeApp.swift in Sources */,
+				C323CA292850E379006923A9 /* DashboardViewModel.swift in Sources */,
+				C323CA2D2850E5AA006923A9 /* Color+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
